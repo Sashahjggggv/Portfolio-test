@@ -1,0 +1,270 @@
+@import '_nullstyle.scss';
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+body {
+	background: #282C33;
+	color: #fff;
+	font-family: 'Fira Code', sans-serif;
+	overflow-x: hidden;
+	
+	&::-webkit-scrollbar {
+		width: 10px;
+		border-radius: 5px;
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		background: #c778dd;
+	}
+	
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+	}
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+		background: none;
+	}
+}
+
+.container {
+	max-width: 75%;
+	margin: 0 auto;
+}
+.button {
+	padding: 8px 16px;
+	display: inline-block;
+	background: none;
+	color: #fff;
+	border: #C778DD solid 2px;
+	transition: 0.2s;
+	&:hover {
+		background: #C778DD;
+	}
+}
+.logo-name {
+	span {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 31px;
+		margin-left: 10px;
+	}
+}
+.header {
+	margin: 32px 0 8px 0;
+	& > * {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__nav {
+		& ol {
+			list-style: none;
+			display: flex;
+		}
+	}
+
+	&__link {
+		margin-left: 40px;
+		font-weight: 500;
+		font-size: 16px;
+		& a {
+			color: #ABB2BF;
+			transition: 0.1s;
+		}
+		&:hover a{color: rgba(255, 255, 255, 0.8)}
+	}
+}
+.hashtag::before {
+	content: '#';
+	color: #C778DD;
+}
+.title {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	font-weight: 500;
+	white-space: pre;
+	font-size: 32px;
+	line-height: 42px;
+	&::after {
+		content: '';
+		display: block;
+		margin-left: 20px;
+		width: 100%;
+		height: 1px;
+		background: #C778DD;
+	}
+}
+.paragraf {
+	font-size: 16px;
+	line-height: 21px;
+	color: #ABB2BF;
+	& > span {
+		display: inline-block;
+		margin-bottom: 20px;
+		&:last-child {margin: 0;}
+	}
+}
+.card {
+	& > * {
+		border: 1px solid #ABB2BF;
+	}
+
+	&__img {
+		width: 100%;
+	}
+
+	&__hard-skills {
+		width: 100%;
+		position: relative;
+		top: -1px;
+		padding: 0 16px;
+		color: #ABB2BF;
+		line-height: 35px;
+	}
+
+	&__info {
+		position: relative;
+		top: -2px;
+		padding: 16px;
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 31px;
+	}
+
+	&__description {
+		display: block;
+		font-size: 16px;
+		line-height: 21px;
+		color: #ABB2BF;
+		margin: 16px 0;
+	}
+
+	&__button {
+		&::after {
+			content: ' <~>';
+		}
+	}
+}
+.card-skill {
+	width: 180px;
+	border: 1px solid #ABB2BF;
+	margin: 8px;
+	&__title {
+		padding: 8px;
+		position: relative;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 21px;
+		&::after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 1px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background: #ABB2BF;
+		}
+	}
+	&__card-info {
+		display: flex;
+		align-items: center;
+		padding: 0 8px;
+		line-height: 25px;
+		font-size: 16px;
+		color: #ABB2BF;
+	}
+}
+.block-contact-me {
+	border: 1px solid #ABB2BF;
+	padding: 16px;
+	&__header {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 21px;
+		color: #fff;
+		margin-bottom: 16px;
+	}
+
+	& img {
+		margin-right: 5px;
+	}
+
+	&__discord {
+		display: flex;
+		align-items: center;
+		margin-bottom: 8px;
+		font-size: 16px;
+		line-height: 21px;
+		color: #ABB2BF;
+	}
+
+	&__email {
+		display: flex;
+		align-items: center;
+		font-size: 16px;
+		line-height: 21px;
+		color: #ABB2BF;
+	}
+}
+.footer {
+	padding: 32px 0;
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 50px;
+	}
+
+	&__content {
+		width: 50%;
+	}
+
+	&__logo-name {
+		display: flex;
+		align-items: center;
+	}
+
+	&__email {
+		margin-left: 30px;
+		transition: 0.2s;
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	&__paragraf {
+		margin-top: 16px;
+	}
+
+	&__media {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 31px;
+		color: #fff;
+	}
+
+	&__title {
+	}
+
+	&__social-links {
+		margin-top: 12px;
+	}
+
+	&__link {
+		&:hover {
+			fill: #fff;
+		}
+	}
+
+	&__copywrite {
+		text-align: center;
+	}
+}

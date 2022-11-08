@@ -1,0 +1,305 @@
+.header__link:first-child a {color: #fff;}
+
+.first {
+	margin-top: 62px;
+	& > * {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__info {
+		margin-top: 80px;
+	}
+	&__header {
+		span {color: #C778DD;}
+		font-weight: 600;
+		font-size: 32px;
+		line-height: 40px;
+	}
+
+	&__paragraf {
+		margin-top: 40px;
+		max-width: 85%;
+	}
+
+	&__button {
+		margin-top: 25px;
+	}
+	&__images {
+		position: relative;
+	}
+	&__logo {
+		position: absolute;
+		top: 85px;
+		left: -10px;
+		z-index: -1;
+	}
+
+	&__dots {
+		position: absolute;
+		right: 12px;
+		top: 250px;
+	}
+
+	&__text {
+		width: 87%;
+		margin: 0 5% 0 ;
+		border: #fff solid 1px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		color: rgba(255, 255, 255, 0.8);
+		font-weight: 600;
+		font-size: 16px;
+		span {
+			color: #fff;
+			padding-left: 12px;
+		}
+		&::before {
+			content: '';
+			width: 16px;
+			height: 16px;
+			display: inline-block;
+			background: #C778DD;
+			margin: 0 10px;
+		}
+	}
+}
+.quote {
+	position: relative;
+
+	&__blocks-text {
+		display: inline-block;
+		margin-top: 112px;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 31px;
+		border: 2px solid #ABB2BF;
+		position: relative;
+		padding: 32px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	&__name {
+		position: absolute;
+		top: 100%;
+		right: -2px;
+		padding: 16px;
+		border: 2px solid #ABB2BF;
+	}
+
+	&__cube-decor {
+		position: absolute;
+		top: 14px;
+		right: -9px;
+		width: 91px;
+		height: 91px;
+		border: 2px solid #ABB2BF;
+	}
+}
+.projects {
+	margin-top: 137px;
+	position: relative;
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__view-all {
+		margin-left: 20.5%;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 21px;
+		color: #fff;
+	}
+
+	&__cards {
+		margin-top: 48px;
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		& > * {
+			width: 32%;
+		}
+	}
+	&__dots {
+		position: absolute;
+		top: 60px;
+		left: -38px;
+	}
+	&__cube {
+		width: 155px;
+		height: 155px;
+		border: 1px solid #fff;
+		position: absolute;
+		top: 250px;
+		right: -87px;
+	}
+}
+.skills {
+	margin-top: 100px;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__logos {
+		min-width: 390px;
+		position: relative;
+	}
+
+	&__dots1 {
+		position: absolute;
+		top: 92px;
+		left: 32px;
+		width: 63px;
+		height: 63px;
+	}
+
+	&__dots2 {
+		position: absolute;
+		top: 200px;
+		left: 200px;
+	}
+
+	&__cube {
+		width: 52px;
+		height: 52px;
+		border: 1px solid #fff;
+		position: absolute;
+		top: 247px;
+		right: 0;
+	}
+
+	&__big-cube {
+		width: 86px;
+		height: 86px;
+		border: 1px solid #fff;
+		position: absolute;
+		top: 54px;
+		left: 240px;
+	}
+
+	&__logo {
+		position: absolute;
+		top: 223px;
+		left: 47px;
+		width: 113px;
+		height: 113px;
+	}
+
+	&__cards {
+		margin-top: 40px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: end;
+	}
+}
+.about-me {
+	margin-top: 112px;
+	position: relative;
+	& > article {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__contant {
+		width: 50%;
+		min-width: 300px;
+	}
+
+	&__paragraf {
+		margin: 50px 0 27px 0;
+	}
+
+	&__block-img {
+		position: relative;
+	}
+
+	&__image {
+		width: 339px;
+		height: 507px;
+		display: block;
+		position: relative;
+		&::after {
+			content: '';
+			width: 100%;
+			height: 1px;
+			display: block;
+			position: absolute;
+			bottom: -1px;
+			left: 0;
+			background: #C778DD;
+		}
+	}
+
+	&__square {
+		position: absolute;
+	}
+
+	&__dots {
+		position: absolute;
+		width: 84px;
+		height: 84px;
+		top: 60px;
+		left: 0;
+	}
+
+	&__dots-min-h {
+		position: absolute;
+		top: 280px;
+		right: 15px;
+		width: 104px;
+		height: 56px;
+	}
+
+	&__square {
+		position: absolute;
+		width: 155px;
+		height: 155px;
+		top: 134px;
+		left: -77px;
+		border: 1px solid #ABB2BF;
+	}
+
+	&__dots-bg {
+		position: absolute;
+		width: 103px;
+		height: 103px;
+		top: 303px;
+		right: -23px;
+	}
+}
+.contacts {
+	margin: 112px 0 130px 0;
+	height: 230px;
+	& > .container {
+		height: 100%;
+		display: flex;
+		position: relative;
+	}
+
+	&__content {
+		width: 50%;
+		white-space: normal;
+	}
+
+	&__title {
+		padding-right: 30%;
+	}
+
+	&__paragraf {
+		margin-top: 45px;
+		font-weight: 500;
+	}
+	
+	&__block-contact-me {
+		position: absolute;
+		bottom: 0;right: 0;
+	}
+
+	&__dots-bg {
+	}
+}
