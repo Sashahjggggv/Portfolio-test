@@ -5,25 +5,37 @@
 	<link rel="stylesheet" href="css/main-page.css">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<title>Portfolio</title>
 </head>
 <body>
-<div class="wrapper">
+<!-- <div class="wrapper"> -->
 	<header class="header">
 		<article class="container">
 			<span class="logo-name"><img src="images/Logo (1).svg" alt="logo-name"><span>Sasha</span></span>
-			<nav class="header__nav">
-				<ol>
-					<li class="header__link"><a class="hashtag" href="#">home</a></li>
-					<li class="header__link"><a class="hashtag" href="#">projects</a></li>
-					<li class="header__link"><a class="hashtag" href="#">about-me</a></li>
-					<li class="header__link"><a class="hashtag" href="#">contacts</a></li>
-				</ol>
-			</nav>
+			
+			<div class="header__open-burger">
+				<nav class="header__nav">
+					<ol>
+						<li class="header__link"><a class="hashtag" href="#">home</a></li>
+						<li class="header__link"><a class="hashtag" href="#">projects</a></li>
+						<li class="header__link"><a class="hashtag" href="#">about-me</a></li>
+						<li class="header__link"><a class="hashtag" href="#">contacts</a></li>
+					</ol>
+				</nav>
+				<aside class="header__social-links">
+					<a href="#" class="aside__link"><img src="images/Github.svg" alt="GitHub"></a>
+					<a href="#" class="aside__link"><img src="images/Dribble.svg" alt="Dribble"></a>
+					<a href="#" class="aside__link"><img src="images/Figma.svg" alt="Figma"></a>
+				</aside>
+			</div>
+			<div class="header__burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 		</article>
 	</header>
-	<!-- повторні елементи <article> -->
 	<main class="main">
 		<section class="first">
 			<article class="container">
@@ -91,9 +103,9 @@
 		</section>
 		<section class="skills">
 			<article class="container">
+				<article class="skills__title title hashtag">skills</article>
 				<div class="skills__row">
 					<div class="skills__logos">
-						<article class="title hashtag">skills</article>
 						<img src="images/Dots.svg" alt="dots" class="skills__dots1">
 						<img src="images/Dots.svg" alt="dots" class="skills__dots2">
 						<div class="skills__cube"></div>
@@ -160,7 +172,11 @@
 			<img src="images/Dots.svg" alt="dots" class="contacts__dots-bg">
 		</section>
 	</main>
-	<aside class="aside"></aside>
+	<aside class="aside">
+		<a href="#" class="aside__link"><img src="images/Github.svg" alt="GitHub"></a>
+		<a href="#" class="aside__link"><img src="images/Dribble.svg" alt="Dribble"></a>
+		<a href="#" class="aside__link"><img src="images/Figma.svg" alt="Figma"></a>
+	</aside>
 	<footer class="footer">
 		<article class="container">
 			<div class="footer__top">
@@ -180,6 +196,8 @@
 			<div class="footer__copywrite paragraf">© Copyright 2022. Made by Elias</div>
 		</article>
 	</footer>
-</div>
+<!-- </div> -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

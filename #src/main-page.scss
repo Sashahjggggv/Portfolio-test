@@ -8,12 +8,14 @@
 	}
 	&__info {
 		margin-top: 80px;
+		width: 60%;
 	}
 	&__header {
 		span {color: #C778DD;}
 		font-weight: 600;
 		font-size: 32px;
 		line-height: 40px;
+		margin-right: 20px;
 	}
 
 	&__paragraf {
@@ -24,27 +26,40 @@
 	&__button {
 		margin-top: 25px;
 	}
+	&__photo {
+		width: 60%;
+		max-width: 470px;
+		min-width: 330px;
+	}
 	&__images {
 		position: relative;
+		& > img:first-child {
+			width: 100%;
+		}
 	}
 	&__logo {
 		position: absolute;
-		top: 85px;
-		left: -10px;
+		top: 20%;
+		left: 0;
+		width: 34%;
+		max-width: 155px;
 		z-index: -1;
 	}
 
 	&__dots {
 		position: absolute;
 		right: 12px;
-		top: 250px;
+		top: 58%;
+		width: 18.4%;
+		max-width: 84px;
 	}
 
 	&__text {
-		width: 87%;
-		margin: 0 5% 0 ;
+		min-width: 87%;
+		width: max-content;
+		margin: 0 auto;
 		border: #fff solid 1px;
-		height: 40px;
+		padding: 12px 20px;
 		display: flex;
 		align-items: center;
 		color: rgba(255, 255, 255, 0.8);
@@ -56,12 +71,32 @@
 		}
 		&::before {
 			content: '';
-			width: 16px;
-			height: 16px;
+			min-width: 16px;
+			min-height: 16px;
 			display: inline-block;
 			background: #C778DD;
-			margin: 0 10px;
+			margin-right: 10px;
 		}
+	}
+	@media (max-width:900px) {
+		&__info {
+			margin: 30px 0 0 0;
+		}
+		&__paragraf {
+			margin-top: 20px;
+		}
+	}
+	@media (max-width:767px) {
+		margin-top: 34px;
+		& > .container {
+			flex-direction: column;
+		}
+		&__info {width: 100%;}
+		&__photo {width: 100%;}
+		&__header {margin: 0;}
+		&__paragraf {margin-top: 25px;max-width: 100%;}
+		&__photo {margin-top: 24px;max-width: 100%;}
+		&__button {display: none;}
 	}
 }
 .quote {
@@ -82,7 +117,7 @@
 
 	&__name {
 		position: absolute;
-		top: 100%;
+		top: 101%;
 		right: -2px;
 		padding: 16px;
 		border: 2px solid #ABB2BF;
@@ -95,6 +130,10 @@
 		width: 91px;
 		height: 91px;
 		border: 2px solid #ABB2BF;
+	}
+	@media (max-width:767px) {
+		&__blocks-text{margin-top: 35px; padding: 25px;}
+		&__cube-decor{display: none;}
 	}
 }
 .projects {
@@ -117,10 +156,20 @@
 	&__cards {
 		margin-top: 48px;
 		display: flex;
+		flex-wrap: wrap;
 		width: 100%;
-		justify-content: space-between;
+		justify-content: center;
 		& > * {
-			width: 32%;
+			width: 30%;
+			min-width: 180px;
+			margin-right: 10px;
+			&:last-child{margin: 0;}
+		}
+		@media (max-width:430px) {
+			& > * {
+				width: 100%;
+				margin: 0;
+			}
 		}
 	}
 	&__dots {
@@ -136,6 +185,17 @@
 		top: 250px;
 		right: -87px;
 	}
+	@media (max-width:1050px) {
+		&__cube {
+			right: -110px;
+		}
+	}
+	@media (max-width:767px) {
+		margin-top: 120px;
+		&__dots {display: none;}
+		&__cube {display: none;}
+		&__cards {margin-top: 35px;}
+	}
 }
 .skills {
 	margin-top: 100px;
@@ -143,6 +203,10 @@
 	&__row {
 		display: flex;
 		justify-content: space-between;
+	}
+
+	&__title {
+		width: 50%;
 	}
 
 	&__logos {
@@ -196,10 +260,29 @@
 		flex-wrap: wrap;
 		justify-content: end;
 	}
+
+	@media (max-width:1050px) {
+		&__logos {
+			display: none;
+		}
+		&__title {
+			width: 100%;
+		}
+		&__cards {
+			justify-content: center;
+		}
+	}
+	@media (max-width:767px) {
+		margin-top: 40px;
+		&__cards {margin-top: 25px;}
+	}
 }
 .about-me {
 	margin-top: 112px;
 	position: relative;
+	& > *{
+		position: relative;
+	}
 	& > article {
 		display: flex;
 		justify-content: space-between;
@@ -223,6 +306,7 @@
 		height: 507px;
 		display: block;
 		position: relative;
+		height: 100%;
 		&::after {
 			content: '';
 			width: 100%;
@@ -233,10 +317,6 @@
 			left: 0;
 			background: #C778DD;
 		}
-	}
-
-	&__square {
-		position: absolute;
 	}
 
 	&__dots {
@@ -271,6 +351,35 @@
 		top: 303px;
 		right: -23px;
 	}
+	@media (max-width:1050px) {
+		&__dots-bg {
+			visibility: hidden;
+		}
+		&__square {
+			left: -90px;
+		}
+	}
+	@media (max-width:767px) {
+		margin-top: 40px;
+		&__paragraf {margin-top: 25px;}
+		&__square {display: none;}
+		&__dots {display: none;}
+		&__image {width: 100%;}
+		&__dots-min-h {display: none;}
+		&__block-img {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			height: 95%;
+		}
+		&__contant {
+			width: 50%;
+		}
+	}
+	@media (max-width:638px) {
+		&__block-img {display: none;}
+		&__contant {width: 100%;}
+	}
 }
 .contacts {
 	margin: 112px 0 130px 0;
@@ -297,9 +406,22 @@
 	
 	&__block-contact-me {
 		position: absolute;
-		bottom: 0;right: 0;
+		bottom: 0;
+		right: 0;
 	}
-
-	&__dots-bg {
+	@media (max-width:767px) {
+		height: 200px;
+		margin: 40px 0 30px;
+		&__dots-bg {display: none;}
+		&__paragraf {margin-top: 25px;}
+	}
+	@media (max-width:600px) {
+		height: 320px;
+		&__content {
+			width: 100%;
+		}
+		&__title {
+			padding: 0;
+		}
 	}
 }
