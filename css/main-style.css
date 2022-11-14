@@ -77,9 +77,6 @@ body {
   color: #fff;
   font-family: "Fira Code", sans-serif;
   overflow-x: hidden !important;
-  /* Handle */
-  /* Handle */
-  /* Track */
 }
 body::-webkit-scrollbar {
   width: 10px;
@@ -93,6 +90,11 @@ body::-webkit-scrollbar-thumb {
 }
 body::-webkit-scrollbar-track {
   background: none;
+}
+@media (max-width: 767px) {
+  body {
+    max-width: 100%;
+  }
 }
 
 .container {
@@ -120,6 +122,7 @@ body::-webkit-scrollbar-track {
 
 .logo-name {
   position: relative;
+  z-index: 10;
 }
 .logo-name span {
   position: absolute;
@@ -134,6 +137,8 @@ body::-webkit-scrollbar-track {
 }
 .header > * {
   position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 .header__open-burger {
   display: flex;
