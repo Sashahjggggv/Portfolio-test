@@ -181,14 +181,6 @@
   width: 100%;
   justify-content: center;
 }
-.projects__cards > * {
-  width: 30%;
-  min-width: 180px;
-  margin-right: 10px;
-}
-.projects__cards > *:last-child {
-  margin: 0;
-}
 @media (max-width: 430px) {
   .projects__cards > * {
     width: 100%;

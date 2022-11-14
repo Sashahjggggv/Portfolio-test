@@ -122,7 +122,6 @@ body::-webkit-scrollbar-track {
 
 .logo-name {
   position: relative;
-  z-index: 10;
 }
 .logo-name span {
   position: absolute;
@@ -139,6 +138,9 @@ body::-webkit-scrollbar-track {
   position: relative;
   display: flex;
   justify-content: space-between;
+}
+.header .logo-name {
+  z-index: 10;
 }
 .header__open-burger {
   display: flex;
@@ -259,6 +261,11 @@ body::-webkit-scrollbar-track {
   color: #C778DD;
 }
 
+.slash::before {
+  content: "/";
+  color: #C778DD;
+}
+
 .title {
   display: flex;
   align-items: center;
@@ -268,7 +275,8 @@ body::-webkit-scrollbar-track {
   font-size: 32px;
   line-height: 42px;
 }
-.title::after {
+
+.title_line::after {
   content: "";
   display: block;
   margin-left: 20px;
@@ -290,6 +298,12 @@ body::-webkit-scrollbar-track {
   margin: 0;
 }
 
+.card {
+  width: 32.333%;
+  min-width: 180px;
+  margin-right: 1%;
+  margin-top: 10px;
+}
 .card > * {
   border: 1px solid #ABB2BF;
 }
