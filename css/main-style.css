@@ -370,6 +370,40 @@ body::-webkit-scrollbar-track {
   color: #ABB2BF;
 }
 
+.block-img {
+  position: relative;
+}
+.block-img__image {
+  width: 339px;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+.block-img__image::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  background: #C778DD;
+}
+.block-img__dots {
+  position: absolute;
+  width: 84px;
+  height: 84px;
+  top: 60px;
+  left: 0;
+}
+.block-img__dots-min-h {
+  position: absolute;
+  top: 280px;
+  right: 15px;
+  width: 104px;
+  height: 56px;
+}
+
 .block-contact-me {
   border: 1px solid #ABB2BF;
   padding: 16px;
@@ -490,5 +524,17 @@ body::-webkit-scrollbar-track {
 @media (max-width: 767px) {
   .aside {
     display: none;
+  }
+}
+
+.title-padges {
+  margin: 50px 0 100px;
+}
+.title-padges__paragraf {
+  margin-top: 15px;
+}
+@media (max-width: 767px) {
+  .title-padges {
+    margin: 50px 0 70px;
   }
 }

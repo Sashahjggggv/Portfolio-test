@@ -294,6 +294,42 @@ body {
 		color: #ABB2BF;
 	}
 }
+.block-img {
+	position: relative;
+
+	&__image {
+		width: 339px;
+		height: 100%;
+		display: block;
+		position: relative;
+		&::after {
+			content: '';
+			width: 100%;
+			height: 1px;
+			display: block;
+			position: absolute;
+			bottom: -1px;
+			left: 0;
+			background: #C778DD;
+		}
+	}
+
+	&__dots {
+		position: absolute;
+		width: 84px;
+		height: 84px;
+		top: 60px;
+		left: 0;
+	}
+
+	&__dots-min-h {
+		position: absolute;
+		top: 280px;
+		right: 15px;
+		width: 104px;
+		height: 56px;
+	}
+}
 .block-contact-me {
 	border: 1px solid #ABB2BF;
 	padding: 16px;
@@ -422,5 +458,15 @@ body {
 	}
 	@media (max-width:767px) {
 		display: none;
+	}
+}
+.title-padges {
+	margin: 50px 0 100px;
+
+	&__paragraf {
+		margin-top: 15px;
+	}
+	@media (max-width:767px) {
+		margin: 50px 0 70px;
 	}
 }
