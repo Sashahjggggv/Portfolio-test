@@ -1,0 +1,125 @@
+.header__link:nth-child(4) a {
+  color: #fff;
+}
+
+body {
+  position: relative;
+}
+
+article.title-padges {
+  margin-bottom: 45px;
+}
+
+.block-info {
+  margin-bottom: 50px;
+}
+.block-info > * {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.block-info__text {
+  width: 50%;
+}
+.block-info__text p {
+  margin-bottom: 10%;
+}
+@media (max-width: 640px) {
+  .block-info__text {
+    width: 100%;
+  }
+}
+.block-info__cards {
+  min-width: 290px;
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 640px) {
+  .block-info__cards {
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+}
+.block-info__card-number {
+  color: #C778DD;
+}
+.block-info__block-contact-me {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 10px;
+}
+.block-info__block-contact-me h4 {
+  white-space: pre;
+}
+.block-info__card-number {
+  white-space: pre;
+}
+
+.all-media {
+  margin-bottom: 70px;
+}
+.all-media__block-links {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.all-media__link {
+  font-size: 16px;
+  line-height: 21px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ABB2BF;
+}
+.all-media__logo {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.square {
+  width: 155px;
+  height: 155px;
+  position: absolute;
+  top: 256px;
+  right: -87px;
+}
+@media (max-width: 767px) {
+  .square {
+    display: none;
+  }
+}
+
+.dots-min-h {
+  position: absolute;
+  top: 400px;
+  left: -31px;
+}
+@media (max-width: 767px) {
+  .dots-min-h {
+    display: none;
+  }
+}
+
+.dots {
+  position: absolute;
+  bottom: -80px;
+  right: -50px;
+}
+@media (max-width: 767px) {
+  .dots {
+    display: none;
+  }
+}

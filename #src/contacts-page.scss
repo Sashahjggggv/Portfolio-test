@@ -1,0 +1,96 @@
+.header__link:nth-child(4) a {color: #fff;}
+body {position: relative;}
+article.title-padges {
+	margin-bottom: 45px;
+}
+.block-info {
+	margin-bottom: 50px;
+	& > * {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__text {
+		width: 50%;
+		& p {margin-bottom: 10%;}
+		@media (max-width:640px) {width: 100%;}
+	}
+
+	&__cards {
+		min-width: 290px;
+		justify-self: end;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		width: fit-content;
+		@media (max-width:640px) {
+			width: 100%;
+			flex-direction: row-reverse;
+			align-items: flex-start;
+			justify-content: start;
+			flex-wrap: wrap;
+		}
+	}
+
+	&__card-number {
+		color: #C778DD;
+	}
+
+	&__block-contact-me {
+		height: fit-content;
+		width: fit-content;
+		margin-left: 10px;
+		& h4 {white-space: pre;}
+	}
+	&__card-number {white-space: pre;}
+}
+.all-media {
+	margin-bottom: 70px;
+	&__block-links {
+		display: flex;
+		margin-top: 20px;
+		flex-wrap: wrap
+	}
+
+	&__link {
+		font-size: 16px;
+		line-height: 21px;
+		font-size: 16px;
+		line-height: 21px;
+		color: #ABB2BF;
+	}
+	&__logo {
+		width: 20px;
+		height: 20px;
+		display: inline-block;
+		margin-right: 5px;
+	}
+}
+
+.square {
+	width: 155px;
+	height: 155px;
+	position: absolute;
+	top: 256px;
+	right: -87px;
+	@media (max-width:767px) {
+		display: none;
+	}
+}
+.dots-min-h {
+	position: absolute;
+	top: 400px;
+	left: -31px;
+	@media (max-width:767px) {
+		display: none;
+	}
+}
+.dots {
+	position: absolute;
+	bottom: -80px;
+	right: -50px;
+	@media (max-width:767px) {
+		display: none;
+	}
+}
