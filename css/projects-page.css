@@ -64,6 +64,11 @@
     margin-bottom: 50px;
   }
 }
+@media (max-width: 427px) {
+  .complete-apps article.card {
+    width: 100%;
+  }
+}
 
 .small-projects {
   margin-bottom: 170px;
@@ -71,5 +76,10 @@
 @media (max-width: 767px) {
   .small-projects {
     margin-bottom: 100px;
+  }
+}
+@media (max-width: 427px) {
+  .small-projects article.card {
+    width: 100%;
   }
 }

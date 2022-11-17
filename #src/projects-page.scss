@@ -61,10 +61,16 @@
 	@media (max-width:767px) {
 		margin-bottom: 50px;
 	}
+	@media (max-width:427px) {
+		& article.card {width: 100%;}
+	}
 }
 .small-projects {
 	margin-bottom: 170px;
 	@media (max-width:767px) {
 		margin-bottom: 100px;
+	}
+	@media (max-width:427px) {
+		& article.card {width: 100%;}
 	}
 }
