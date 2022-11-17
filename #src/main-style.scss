@@ -464,6 +464,7 @@ body {
 	position: fixed;
 	top: 0px;
 	left: 1.5%;
+	z-index: 10;
 
 	&__link {
 		display: block;
