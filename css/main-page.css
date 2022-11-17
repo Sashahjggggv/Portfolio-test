@@ -294,6 +294,11 @@
     margin-top: 25px;
   }
 }
+@media (max-width: 452px) {
+  .skills__cards > article {
+    width: 100%;
+  }
+}
 
 .about-me {
   margin-top: 112px;
@@ -349,9 +354,6 @@
   .about-me__dots {
     display: none;
   }
-  .about-me__image {
-    width: 100%;
-  }
   .about-me__dots-min-h {
     display: none;
   }
@@ -362,15 +364,10 @@
     height: 95%;
   }
   .about-me__contant {
-    width: 50%;
-  }
-}
-@media (max-width: 638px) {
-  .about-me__block-img {
-    display: none;
-  }
-  .about-me__contant {
     width: 100%;
+  }
+  .about-me .block-img {
+    display: none;
   }
 }
 

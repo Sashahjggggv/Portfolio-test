@@ -270,6 +270,11 @@
 		margin-top: 40px;
 		&__cards {margin-top: 25px;}
 	}
+	@media (max-width:452px) {
+		&__cards > article {
+			width: 100%;
+		}
+	}
 }
 .about-me {
 	margin-top: 112px;
@@ -321,7 +326,6 @@
 		&__paragraf {margin-top: 25px;}
 		&__square {display: none;}
 		&__dots {display: none;}
-		&__image {width: 100%;}
 		&__dots-min-h {display: none;}
 		&__block-img {
 			position: absolute;
@@ -329,13 +333,8 @@
 			right: 0;
 			height: 95%;
 		}
-		&__contant {
-			width: 50%;
-		}
-	}
-	@media (max-width:638px) {
-		&__block-img {display: none;}
 		&__contant {width: 100%;}
+		& .block-img {display: none;}
 	}
 }
 .contacts {
